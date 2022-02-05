@@ -42,7 +42,7 @@ var cajita = [];
 var listado = document.getElementById('listado');
 var producto = document.getElementById('producto');
 var contador = document.getElementById('contador');
-var valor = document.getElementById('valor');
+
 
 
 
@@ -50,10 +50,6 @@ var valor = document.getElementById('valor');
 
 if(cajita.length==0){
     listado.innerHTML = 'No hay nada Ingresado..';
-}
-
-if(contador>0){
-    valor.innerHTML = 'tenes que pasdad';
 }
 
 
