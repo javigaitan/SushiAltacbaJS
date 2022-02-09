@@ -27,24 +27,75 @@ function closeNav() {
 })(jQuery);
 
 
+//SIMULADOR de compra 
+
+let total = 0;
+let precio = 0; 
+let otroPlato = false; 
+
+function agregaralCarrito() {
+    do {
+        let producto = prompt('¿Te gustaria probar nuestra promocion del dia?');
+
+        switch (producto) {
+            case 'si':
+                precio = 500;
+                break;
+
+            case 'Si':
+                precio = 500;
+                break;
+
+            case 'SI':
+                precio = 500;
+                break;
+
+            case 'sI':
+                precio = 500;
+                break;
+
+            default:
+                alert('Algun dato ingresado es incorrecto');
+                precio = 0;
+
+        }
+
+         total = total + precio;
+         otroPlato = confirm('¿Te gustaria un plato mas?')
+
+    } while (otroPlato);
+
+}
 
 
-//let nombre = prompt('Bienvenido a Sushi Alta Cordoba! Contanos cual es tu nombre?');
+function calcularEnvio(){
+    let confirmar = confirm('¿Necesitas delivery a domicilio?');
 
-//console.log(nombre);
+    if(confirmar && total >=3000){
+        alert ('Tenes envio gratis. El total de tu compra es ' + total);
+    } else if (confirmar && total < 3000 && total !=0) {
+        total = total +120;
+        alert('El costo del delivery es $120. El total de la compra es:' + total);
+    } else {
+        alert ('El total de tu compra es : ' +total);
+    }
+    
+    return total;
+
+}
+
+agregaralCarrito();
+calcularEnvio(total);
 
 
 
-// Arrays
+// Arrays de comida
 
 var cajita = [];
 
 var listado = document.getElementById('listado');
 var producto = document.getElementById('producto');
 var contador = document.getElementById('contador');
-
-
-
 
 
 
