@@ -1,3 +1,5 @@
+//Alrt de barrio
+
 (async () => {
 
 const {value: barrio} = await Swal.fire({
@@ -35,3 +37,5 @@ if (barrio =='otros'){Swal.fire({
 
 }
 })()
+
+

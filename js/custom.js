@@ -117,6 +117,14 @@ function eliminar(){
 }
 
 
+//Evento sobre reserva
 
 
+(function(){
+	var recerva = function(){
+		alert ('Listo ya tenes tu reserva');
+	};
 
+	var boton = document.getElementById('boton');
+	boton.addEventListener('click', recerva);
+}())
