@@ -128,3 +128,33 @@ function eliminar(){
 	var boton = document.getElementById('boton');
 	boton.addEventListener('click', recerva);
 }())
+
+
+//Class Objeto constructor
+
+class Productos {
+    constructor(nombreComida, valor) {
+        this.nombreComida = nombreComida,
+        this.valor = parseFloat(valor),
+        this.vendido = false
+        
+    }
+
+    sumarEnvio(){
+        this.valor = this.valor + 120;
+    }
+
+    vender(){
+        this.vendido = true;
+    }
+}
+
+const comidaClasica = new Productos('roll california', '80');
+const comida2 = new Productos('roll clasico', '50');
+
+comidaClasica.sumarEnvio();
+comidaClasica.vender();
+comida2.sumarEnvio();
+
+console.log(comidaClasica);
+console.log(comida2);
