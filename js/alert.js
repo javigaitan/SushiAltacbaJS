@@ -1,4 +1,6 @@
-//Alrt de barrio
+//Alert de barrio inicio
+
+
 
 (async () => {
 
@@ -24,8 +26,9 @@ const {value: barrio} = await Swal.fire({
 });
 
 
+
 if (barrio =='otros'){Swal.fire({
-    title: 'El envio a barrios fuera de la lista pueden tener una demora extra para llegar, tranquil@ lo bueno se hace esperar',
+    title: 'El envio a barrios fuera de la lista pueden tener una demora extra para llegar, tranquil@ lo bueno se hace esperar como tu hermana',
     width: '90%',
 	 padding: '2rem',
 	 backdrop: true,

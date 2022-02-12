@@ -5,6 +5,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Sushi Alta Cordoba</title>
+  <script src="https://kit.fontawesome.com/df59baf6b8.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
   <meta name="description" content="">
   <meta name="keywords" content="">
 
@@ -27,25 +31,17 @@
   <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/estilosafter.css">
 
 </head>
 
 <body>
-  <!--banner-->
-  <section id="banner">
+ 
+  
+  <div id="banner">
     <div class="bg-color">
       <header id="header">
-        <div class="container">
-          <div id="mySidenav" class="sidenav">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a href="#about">Nosotros</a>
-            <a href="#event">Eventos</a>
-            <a href="#menu-list">Menu</a>
-            <a href="#contact">Arma tu Pedido de Rolls </a>
-          </div>
-          <!-- Use any element to open the sidenav -->
-          <span onclick="openNav()" class="pull-right menu-icon">☰</span>
-        </div>
+        <div class="container"></div>
       </header>
       <div class="container">
         <div class="row">
@@ -57,14 +53,16 @@
         </div>
       </div>
     </div>
-  </section>
-  <!-- / banner -->
+  </div>
+ 
+
+
   <!--about-->
-  <section id="about" class="section-padding">
+  <div id="about" class="div-padding">
     <div class="container">
       <div class="row">
         <div class="col-md-12 text-center marb-35">
-          <h1 class="header-h">Nuetra Misión</h1>
+          <h2 class="header-h">Nuetra Misión</h2>
           <p class="header-p">Hacer de Sushi Alta Cordoba un espacio relacionado con el buen vivir: Ofreciendo a
             nuestros clientes sushi creativo y de calidad premium, cocina innovadora y dinámica. </p>
         </div>
@@ -77,12 +75,8 @@
                 profesional, y acondiciona sus locales en ubicaciones estratégicas con un diseño personal, que conforman
                 su identidad y hacen de cada visita a Sushi Alta Cordoba una experiencia única.</p>
               <div class="details-list">
-                <ul>
-                  <li><i class="fa fa-check"></i>Productos de primer nivel</li>
-                  <li><i class="fa fa-check"></i>20 años de experiencia en cocina oriental</li>
-                  <li><i class="fa fa-check"></i>Ambiente ideal para la familia </li>
-                  <li><i class="fa fa-check"></i>El mas amplio en su carta de menu</li>
-                </ul>
+
+
               </div>
             </div>
           </div>
@@ -93,11 +87,11 @@
         <div class="col-md-1"></div>
       </div>
     </div>
-  </section>
+  </div>
   <!--/about-->
   <!-- event -->
-  <section id="event">
-    <div class="bg-color" class="section-padding">
+  <div id="event">
+    <div class="bg-color" class="div-padding">
       <div class="container">
         <div class="row">
           <div class="col-xs-12 text-center" style="padding:60px;">
@@ -123,8 +117,8 @@
                     <strong>Hora: </strong>
                     07:30pm
                   </address>
-                  <button id="boton" class="btn btn-imfo btn-read-more" >    Hace tu reserva tocando aqui!</button>
-                
+                  <button id="boton" class="btn btn-imfo btn-read-more"> Hace tu reserva tocando aqui!</button>
+
                 </div>
               </div>
             </div>
@@ -132,16 +126,82 @@
         </div>
       </div>
     </div>
-  </section>
+  </div>
   <!--/ event -->
+
+
+  <div>
+    <div>
+      <h2 class="header-h">Tienda de Rolls</h2>
+      <button id="boton-carrito"><i class="fas fa-shopping-cart"></i><span id="contadorCarrito">0</span></button>
+    </div>
+
+    <select id="selecOrigen">
+      <option value="all">Todos</option>
+      <option value="N">Nacional</option>
+      <option value="E">Extranjero</option>
+
+    </select>
+
+    <main id="contenedor-productos">
+
+    </main>
+
+
+    <section class="modal-contenedor">
+      <div class="modal-carrito">
+        <h3>Carrito</h3>
+        <button id="carritoCerrar"><i class="fas fa-times-circle"></i></button>
+        <div id="carrito-contenedor">
+
+        </div>
+        <p class="precioProducto">Precio total: $<span id="precioTotal"></span></p>
+      </div>
+    </section>
+
+
+
+  </div>
+
+
+
+
+  <!--/ ARMAR PLATO -->
+
+
+
+  <div id="contact" class="div-padding">
+
+    <div class="container">
+      <h2 class="header-h">Necesitas algo mas?</h2>
+      <p>A continuacion podes aclarar si necesitas algo mas en tu pedido</p>
+      <div class="search">
+        <form>
+          <input type="text" placeholder="Agregar Roll...">
+          <button class="btn-add">+</button>
+        </form>
+      </div>
+      <div class="li-container">
+        <ul>
+
+        </ul>
+      </div>
+      <div class="empty">
+        <p>No tienes ninguna aclaracion indicada.</p>
+      </div>
+    </div>
+
+  </div>
+
+
+
   <!-- menu -->
-  <section id="menu-list" class="section-padding">
+  <div id="menu-list" class="div-padding">
     <div class="container">
       <div class="row">
         <div class="col-md-12 text-center marb-35">
           <h1 class="header-h">Menu para delivery</h1>
-          <p class="header-p">A continuacion tenemos una seccion especial para delivery y ademas tenes un nuevo espacio
-            para armar tu combinacion a medida! </p>
+          <p class="header-p">A continuacion tenemos una seccion especial para delivery</p>
         </div>
         <div class="col-md-12  text-center gallery-trigger">
           <ul>
@@ -272,82 +332,56 @@
       </div>
     </div>
 
-    
-  </section>
+
+  </div>
   <!--/ menu -->
 
 
-  <!--/ ARMAR PLATO -->
 
 
 
-  <section id="contact" class="section-padding">
-
-    <div class="menuArmado">
-
-      <h1 class="header-h"> Arma tu combinado a tu medida!</h1>
-
-      <input id='producto' placeholder="Ingrese un producto" type='text' class="">
-
-      <br>
-
-      <button onclick="agregar()" class="btn btn-info">AGREGAR</button>
-      <button onclick="eliminar()" class="btn btn-danger">ELIMINAR</button>
-
-      <h2>Lista de pedido</h2>
-
-      <div id="listado"></div>
-
-      <hr>
-
-
-      <h3>Total de Rolls</h3>
-      <div id="contador">
-      </div>
+  </div>
+  <div id="contact" class="div-padding">
 
 
 
-
-
-    </div>
-    <section id="contact" class="section-padding">
-
-
-
-      <!-- footer -->
-      <footer class="footer text-center">
-        <div class="footer-top">
-          <div class="row">
-            <div class="col-md-offset-3 col-md-6 text-center">
-              <div class="widget">
-                <h4 class="widget-title">Sushi Alta Cordoba</h4>
-                <address>Alta Cordoba<br>Avellaneda 5500</address>
-                <div class="social-list">
-                  <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                  <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                </div>
-                <p class="copyright clear-float">
-                  © Sushi Alta Cordoba- Todo los derechos reservados
-                <div class="credits">
-
-                  Desarrollador: Gaitan Javier Emanuel
-                </div>
-                </p>
+    <!-- footer -->
+    <footer class="footer text-center">
+      <div class="footer-top">
+        <div class="row">
+          <div class="col-md-offset-3 col-md-6 text-center">
+            <div class="widget">
+              <h4 class="widget-title">Sushi Alta Cordoba</h4>
+              <address>Alta Cordoba<br>Avellaneda 5500</address>
+              <div class="social-list">
+                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
               </div>
+              <p class="copyright clear-float">
+                © Sushi Alta Cordoba- Todo los derechos reservados
+              <div class="credits">
+
+                Desarrollador: Gaitan Javier Emanuel
+              </div>
+              </p>
             </div>
           </div>
         </div>
-      </footer>
-      <!-- / footer -->
+      </div>
+    </footer>
+    <!-- / footer -->
 
-      <script src="js/jquery.min.js"></script>
-      <script src="js/jquery.easing.min.js"></script>
-      <script src="js/bootstrap.min.js"></script>
-      <script src="js/jquery.mixitup.min.js"></script>
-      <script src="js/custom.js"></script>
-      <script src="contactform/contactform.js"></script>
-      <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-      <script src="js/alert.js"></script>
+
+    <script src="js/stock.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.mixitup.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/alert.js"></script>
 
 </body>
 
