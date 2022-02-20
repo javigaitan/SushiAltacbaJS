@@ -41,7 +41,7 @@ function closeNav() {
 }())
 
 
-
+//Crea tu plato 
 
 const input = document.querySelector("input");
 const addBtn = document.querySelector(".btn-add");
@@ -124,3 +124,6 @@ comida2.sumarEnvio();
 
 console.log(comidaClasica);
 console.log(comida2);
+
+
+

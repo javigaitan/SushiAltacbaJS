@@ -1,5 +1,6 @@
-let carritoDeCompras = []
 
+
+let carritoDeCompras = []
 const contenedorProductos = document.getElementById('contenedor-productos');
 const contenedorCarrito = document.getElementById('carrito-contenedor');
 
@@ -95,6 +96,8 @@ function  actualizarCarrito (){
     contadorCarrito.innerText = carritoDeCompras.reduce((acc,el)=> acc + el.cantidad, 0)
     precioTotal.innerText= carritoDeCompras.reduce((acc,el)=> acc + (el.precio * el.cantidad),0)
 }
+
+
 
 
 
