@@ -97,6 +97,7 @@ table {
     font-size: 46px;
     font-family: 'Satisfy', sans-serif;
     font-weight: 300;
+    text-align: center;
 }
 .header-p {
     color: #9699a6;
@@ -525,7 +526,7 @@ select{
 }
 .card .card-image .card-title{
     color :rgb(225, 76, 65);
-    position:unset
+    position:unset;
 }
 
 .productoEnCarrito {
@@ -557,9 +558,8 @@ select{
 
 
 
-#contact{
-    background-color: rgba(221, 221, 221, 0.33);
-}
+
+
 .footer .social-list a {
     font-size: 32px;
     font-weight: normal;

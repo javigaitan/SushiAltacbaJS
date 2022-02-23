@@ -17,8 +17,12 @@ const {value: barrio} = await Swal.fire({
 	 inputOptions: {
          altaCba: 'Alta Cordoba',
          cofico: 'Cofico',
-         centro: 'Centro',
+         provi: 'Providencia',
+         general: 'General Bustos',
+		 pueyrre: 'Pueyrredon',
          alberdi: 'Alberdi',
+         centro: 'Centro',
+         america: 'Residencial America',
          otros: 'Otros',
         }
         
@@ -28,7 +32,7 @@ const {value: barrio} = await Swal.fire({
 
 
 if (barrio =='otros'){Swal.fire({
-    title: 'El envio a barrios fuera de la lista pueden tener una demora extra para llegar, tranquil@ lo bueno se hace esperar como tu hermana',
+    title: 'El envio a barrios fuera de la lista pueden tener valor extra en el delivery, pero calma solo son $50,00 extras',
     width: '90%',
 	 padding: '2rem',
 	 backdrop: true,
