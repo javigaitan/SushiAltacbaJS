@@ -33,7 +33,13 @@ function closeNav() {
 
 (function(){
 	var recerva = function(){
-		alert ('Listo ya tenes tu reserva');
+        Swal.fire({
+            position: 'top-end',
+            icon: 'success',
+            title: 'Tu reserva esta lista! ',
+            showConfirmButton: false,
+            timer: 1500
+          })
 	};
 
 	var boton = document.getElementById('boton');
@@ -43,14 +49,19 @@ function closeNav() {
 //Evento sobre finalizar compra de carrito (TERMINAR AGREGAR BULEANO TERNARIO)
 
 (function(){
-	var comprar = function(){
+	var finalizar = function(){
 
-    alert ('Tu pedido fue generado con exito, estara listo em 30 minutos, Muchas Gracias');
-
+        Swal.fire({
+            position: 'top-end',
+            icon: 'success',
+            title: 'Tu compra fue realizada con exito! En 30 minutos estaremos en tu puerta',
+            showConfirmButton: false,
+            timer: 1500
+          })
 	};
 
 	var endCompra = document.getElementById('endCompra');
-	endCompra.addEventListener('click', comprar);
+	endCompra.addEventListener('click', finalizar);
 }())
 
 

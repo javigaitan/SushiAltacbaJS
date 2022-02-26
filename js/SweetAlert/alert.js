@@ -3,6 +3,8 @@
 
 
 (async () => {
+    
+    
 
 const {value: barrio} = await Swal.fire({
 	 title: 'Bienvenido!',
@@ -44,4 +46,6 @@ if (barrio =='otros'){Swal.fire({
 
 }
 })()
+
+
 

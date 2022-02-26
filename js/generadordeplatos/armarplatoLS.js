@@ -138,6 +138,11 @@ const addBtn = document.querySelector(".btn-add");
 const ul = document.querySelector("ul");
 const empty = document.querySelector(".empty");
 
+
+
+
+
+
 addBtn.addEventListener("click", (e) => {
   e.preventDefault();
 
