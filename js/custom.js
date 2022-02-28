@@ -46,19 +46,13 @@ function closeNav() {
 	boton.addEventListener('click', recerva);
 }())
 
-//Evento sobre finalizar compra de carrito (TERMINAR AGREGAR BULEANO TERNARIO)
+//Evento sobre finalizar compra de carrito
 
 (function(){
-	var finalizar = function(){
+	var finalizar = () => 
+       
 
-        Swal.fire({
-            position: 'top-end',
-            icon: 'success',
-            title: 'Tu compra fue realizada con exito! En 30 minutos estaremos en tu puerta',
-            showConfirmButton: false,
-            timer: 1500
-          })
-	};
+         (precioTotal.innerText) ? alert('Gracias por tu compra llega en 30min') :  alert ('El carro esta vacio');
 
 	var endCompra = document.getElementById('endCompra');
 	endCompra.addEventListener('click', finalizar);

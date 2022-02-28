@@ -12,11 +12,9 @@ const selecOrigen = document.getElementById('selecOrigen')
 
 selecOrigen.addEventListener('change',()=>{
     console.log(selecOrigen.value);
-    if(selecOrigen.value == 'all'){
-        mostrarProductos(stockProductos)
-    }else{
-        mostrarProductos(stockProductos.filter(elemento => elemento.origen == selecOrigen.value))
-    }
+    (selecOrigen.value == 'all')?
+        mostrarProductos(stockProductos): mostrarProductos(stockProductos.filter(elemento => elemento.origen == selecOrigen.value))
+    
 })
 
 
