@@ -425,7 +425,51 @@ table {
     display: inline-block;
 }
 
-
+.li-container {
+    background-color: white;
+    width: 100%;
+    color: darkslategray;
+    margin-top: 20px;
+  }
+  
+  ul {
+    padding: 0;
+  }
+  
+  li {
+    list-style: none;
+    border-radius: 10px;
+    margin-top: 15px;
+    display: flex;
+  }
+  
+  li p {
+    margin: 0;  
+    padding: 5px;
+    width: 100%;
+  }
+  
+  .btn-delete:hover {
+    cursor: pointer;
+    background-color: lightseagreen;
+  }
+  
+  .btn-add {
+    padding: 5px 15px;
+    border: none;
+    color: white;
+    font-family: fantasy;
+    background-color: teal;
+    font-size: 1.4rem;
+    outline: none;
+  }
+  
+  
+  
+  .empty {
+    color: darkslategrey;
+  }
+  
 
 #boton-carrito {
     border: none;
@@ -446,7 +490,7 @@ table {
 }
 
 #contenedor-productos {
-    max-width: 1200px;
+    max-width: 100%;
     margin: 60px auto;
     display: flex;
     justify-content: space-between;
@@ -543,10 +587,14 @@ select{
 }
 
 .boton-eliminar {
-    background-color: white;
-    color: red;
+
+
+    display: flex;
+    background-color: #FFB03B;
+    color: black;
     border: none;
     font-size: 20px;
+    padding: 5px 5px;
 }
 
 .boton-eliminar:hover {
@@ -568,6 +616,10 @@ select{
     margin: 0 5px;
 }
 @media (min-width: 768px) and (max-width: 980px) {
+
+    
+
+
     .content-holder h2 {
         font-size: 23px;
     }
@@ -576,12 +628,32 @@ select{
     }
 }
 @media (min-width: 451px) and (max-width: 767px) {
+
+
+
+
+    .modal-carrito {
+        min-width: 350px;  
+    }
+
     .details-text {
         border:0px;
         border-bottom: 2px solid #A87F41;
     }
+
+
+
+
 }
 @media (min-width: 20px) and (max-width: 450px) {
+
+
+    .modal-carrito {
+        
+        min-width: 350px;
+        
+    }
+
     .menu-restaurant {
     width: 100%;
     }

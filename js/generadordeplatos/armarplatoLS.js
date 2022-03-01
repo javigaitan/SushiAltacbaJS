@@ -166,7 +166,7 @@ function addDeleteBtn() {
   const deleteBtn = document.createElement("button");
 
   deleteBtn.textContent = "X";
-  deleteBtn.className = "btn-delete";
+  deleteBtn.className = "boton-eliminar";
 
   deleteBtn.addEventListener("click", (e) => {
     const item = e.target.parentElement;

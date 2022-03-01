@@ -35,6 +35,7 @@ function mostrarProductos(array){
         let div = document.createElement('div')
         div.className = 'producto'
         div.innerHTML = `
+                        
                         <div class="card">
                         <div class="card-image">
                             <img src=${img}>

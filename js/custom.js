@@ -52,7 +52,19 @@ function closeNav() {
 	var finalizar = () => 
        
 
-         (precioTotal.innerText) ? alert('Gracias por tu compra llega en 30min') :  alert ('El carro esta vacio');
+         (precioTotal.innerText) ? Swal.fire({
+            position: 'center',
+            icon: 'success',
+            title: 'Gracias por tu compra! Estara lista en 20 min ',
+            showConfirmButton: false,
+            timer: 2000
+          }) :  Swal.fire({
+            position: 'center',
+            icon: 'error',
+            title: 'Ups, tu carro esta vacio ! ',
+            showConfirmButton: false,
+            timer: 2000
+          });
 
 	var endCompra = document.getElementById('endCompra');
 	endCompra.addEventListener('click', finalizar);
