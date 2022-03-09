@@ -6,7 +6,7 @@
     
     
 
-const {value: barrio} = await Swal.fire({
+const {value: barrioCordoba} = await Swal.fire({
 	 title: 'Bienvenido!',
 	 text: 'Selecciona el barrio desde donde vas a solicitar tu pedido',
 	 width: '80%',
@@ -33,7 +33,7 @@ const {value: barrio} = await Swal.fire({
 
 
 
-if (barrio =='otros'){Swal.fire({
+if (barrioCordoba =='otros'){Swal.fire({
     title: 'El envio a barrios fuera de la lista pueden tener valor extra en el delivery, pero calma solo son $50,00 extras',
      width: '90%',
 	 padding: '2rem',

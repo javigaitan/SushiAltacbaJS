@@ -99,5 +99,3 @@ comida2.sumarEnvio();
 
 console.log(comidaClasica);
 console.log(comida2);
-
-

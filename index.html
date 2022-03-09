@@ -82,7 +82,7 @@
             </div>
           </div>
           <div class="col-md-6 col-sm-6">
-            <img id= imagen1 src="img/combo-black40.jpg" class="img-responsive">
+            <img id=imagen1 src="img/combo-black40.jpg" class="img-responsive">
           </div>
         </div>
         <div class="col-md-1"></div>
@@ -102,7 +102,7 @@
           <div class="col-md-12" style="padding-bottom:60px;">
             <div class="item active left">
               <div class="col-md-6 col-sm-6 left-images">
-                <img id= imagen2 src="img/combo-red30.jpg" class="img-responsive">
+                <img id=imagen2 src="img/combo-red30.jpg" class="img-responsive">
               </div>
               <div class="col-md-6 col-sm-6 details-text">
                 <div class="content-holder">
@@ -207,7 +207,7 @@
     <button id="boton-agregar" class="boton-agregar">Agregar un Roll mas</button>
     <ul class="lista-Rolls">
     </ul>
-    
+
     <button class="boton-limpiar">Limpiar todo</button>
   </div>
 
@@ -220,8 +220,8 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12 text-center marb-35">
-          <h1 class="header-h">Menu para delivery</h1>
-          <p class="header-p">A continuacion tenemos una seccion especial para delivery</p>
+          <h1 class="header-h">Carta en Local</h1>
+          <p class="header-p">A continuacion tenes la carta disponible en nuestro local</p>
         </div>
         <div class="col-md-12  text-center gallery-trigger">
           <ul>
@@ -356,6 +356,88 @@
   </div>
   <!--/ menu -->
 
+  <section id="contact" class="section-padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <h1 class="header-h">Enterate de nuestras ofertas y novedades</h1>
+          <p class="header-p">Completando este formulario podes enterarte de nuestras novedades antes que todos! </p>
+        </div>
+      </div>
+      <div class="row msg-row">
+        <div class="col-md-4 col-sm-4 mr-15">
+          <div class="media-2">
+            <div class="media-left">
+              <div class="contact-phone bg-1 text-center"><span class="phone-in-talk fa fa-phone"></span></div>
+            </div>
+            <div class="media-body">
+              <h4 class="dark-blue regular">Telefono</h4>
+              <p>+54 9 3512075103 - <span class="contacts-sp"></span></p>
+            </div>
+          </div>
+          <div class="media-2">
+            <div class="media-left">
+              <div class="contact-email bg-14 text-center"><span class="hour-icon fa fa-clock-o"></span></div>
+            </div>
+            <div class="media-body">
+              <h4 class="dark-blue regular">Horarios</h4>
+              <p> Lunes a Viernes 09.00 - 24:00</p>
+              <p>
+                Sabados y Domingos 08:00 - 03.00
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-8 col-sm-8">
+
+          <div class="col-md-6 col-sm-6 contact-form pad-form">
+            <div class="form-group label-floating is-empty">
+              <input type="text" name="name" class="form-control" id="name" placeholder="Nombre" data-rule="minlen:4"
+                data-msg="Please enter at least 4 chars" />
+              <div class="validation"></div>
+            </div>
+
+          </div>
+
+          <div class="col-md-6 col-sm-6 contact-form pad-form">
+            <div class="form-group">
+              <input type="email" class="form-control label-floating is-empty" name="email" id="email"
+                placeholder="Ingresa tu email" data-rule="email" data-msg="Please enter a valid email" />
+              <div class="validation"></div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-sm-6 contact-form">
+            <div class="form-group">
+              <input type="text" class="form-control label-floating is-empty" name="phone" id="phone"
+                placeholder="Telefono" data-rule="required" data-msg="This field is required" />
+              <div class="validation"></div>
+            </div>
+          </div>
+
+          <div class="col-md-12 contact-form">
+            <div class="form-group">
+              <select id="selector">
+                <option>Selecciona tu Barrio</option>
+              </select>
+            </div>
+          </div>
+
+
+
+
+
+        </div>
+        <div class="col-md-6 col-sm-6 contact-form">
+          <div class="contacts-btn-pad">
+            <button class="contacts-btn">Enviar formulario</button>
+          </div>
+        </div>
+        </form>
+      </div>
+    </div>
+    </div>
+  </section>
 
 
 
@@ -395,6 +477,7 @@
 
   <script src="js/tienda/stock.js"></script>
   <script src="js/tienda/modal.js"></script>
+  <script src="js/selectorDeBarrios.js"></script>
   <script src="js/scroll/scrollapp.js"></script>
   <script src="js/generadordeplatos/armarplatoLS.js"></script>
   <script src="js/tienda/app.js"></script>
