@@ -35,10 +35,13 @@ function mostrarProductos(array){
         let div = document.createElement('div')
         div.className = 'producto'
         div.innerHTML = `
-                        
-                        <div class="card">
+
+                        <div class="col">
+                        <div class="col-md-12">
+
+                        <div class="card" >
                         <div class="card-image">
-                            <img src=${img}>
+                            <img src=${img} class= 'card-img-top'>
                             <span class="card-title">${tipo}</span>
                             <a id="botonAgregar${id}" class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add_shopping_cart</i></a>
                         </div>
@@ -47,6 +50,9 @@ function mostrarProductos(array){
                             <p>Origen: ${origen}</p>
                             <p> $${precio}</p>
                         </div>
+                    </div>
+                    </div>
+                    </div>
                     </div>
         `
         contenedorProductos.appendChild(div)

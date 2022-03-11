@@ -9,4 +9,6 @@ let stockProductos = [
     {id: 8, tipo: 'Roll Coder', desc: 'Un roll que contiene salame especial', precio: 50, origen: "E", img: './img/sushi2.jpg', cantidad: 1 },
     {id: 9, tipo: 'Roll Ing', desc: 'Un roll que contiene tomate especial', precio: 50, origen: "E", img: './img/img_5d877834baebc.jpg', cantidad: 1 },
     {id: 10,tipo: 'Roll On',desc: 'Un roll que contiene mortadela especial', precio: 50, origen: "E", img: './img/img_5d877832a5261.jpg', cantidad: 1 },
+    {id: 11, tipo: 'Roll Jorgito', desc: 'Un roll que contiene queso especial', precio: 50, origen: "N", img: './img/uramaki1.jpg', cantidad: 1 },
+    {id: 12, tipo: 'Roll Cordoba', desc: 'Un roll que contiene pimiento especial', precio: 50, origen: "N", img: './img/uramaki1.jpg', cantidad: 1 },
 ]
